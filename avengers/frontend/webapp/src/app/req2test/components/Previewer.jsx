@@ -24,7 +24,7 @@ const formatGherkin = (text) => {
       // return 'Then ' in orange and medium and the rest of the line as is
       line = line.replace('Then', '&nbsp&nbsp&nbsp&nbsp<span class="text-orange-600 font-medium">Then</span>');
     } else if (line.trim().startsWith('And')) {
-      // return 'And ' in teal and medium and the rest of the line as is
+      // return 'And ' in teal and medium and th["python", "app.py"]e rest of the line as is
       line = line.replace('And', '&nbsp&nbsp&nbsp&nbsp<span class="text-teal-500 font-medium">And</span>');
     }
     return line;
